@@ -195,20 +195,23 @@ nav .social i:hover{
     padding: 100px 0px;
 }
 
-.about .titles{
+.about .titles,
+.classes .titles{
     text-align: center;
     font-family: Oswald;
     text-transform: uppercase;
 }
 
-.about .titles .title1{
+.about .titles .title1,
+.classes .titles .title1{
     color: #F36100;
     font-size: 18px;
     font-family: Mulish;
     font-weight: 700;
 }
 
-.about .titles .title2{
+.about .titles .title2,
+.classes .titles .title2{
     font-size: 30px;
     font-family: Oswald;
     font-weight: 700;
@@ -275,8 +278,35 @@ nav .social i:hover{
     line-height: 20px;
 }
 
+/** Classes section style **/
 
+.classes{
+    background-color: #151515;
+    color: white;
+    padding: 100px 0px;
+}
 
+.classes .container{
+    margin-top: 30px;
+}
+
+.classes .container .col3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.classes .container .col2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.classes .container .card{
+    background-color: #333333;
+    height: 300px;
+}
 
 /** responsive style **/
 
