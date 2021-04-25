@@ -303,9 +303,49 @@ nav .social i:hover{
     margin-top: 25px;
 }
 
-.classes .container .card{
-    background-color: #333333;
+.classes .container .col3 .card{
+    background-color: #0a0a0a;
     height: 300px;
+}
+
+.classes .container .col2 .card{
+    background-color: #0a0a0a;
+    height: 400px;
+}
+
+.classes .container .col3 .one .img-form{
+    background: url('../images/class-1.jpg');
+    width: auto;
+    height: 220px;
+    border-bottom: 4px solid #333333;
+}
+
+.classes .container .col3 .two .img-form{
+    background: url('../images/class-2.jpg');
+    width: auto;
+    height: 220px;
+    border-bottom: 4px solid #333333;
+}
+
+.classes .container .col3 .three .img-form{
+    background: url('../images/class-3.jpg');
+    width: auto;
+    height: 220px;
+    border-bottom: 4px solid #333333;
+}
+
+.classes .container .col2 .one .img-form{
+    background: url('../images/class-4.jpg');
+    width: auto;
+    height: 280px;
+    border-bottom: 4px solid #333333;
+}
+
+.classes .container .col2 .two .img-form{
+    background: url('../images/class-5.jpg');
+    width: auto;
+    height: 280px;
+    border-bottom: 4px solid #333333;
 }
 
 /** responsive style **/
