@@ -290,67 +290,113 @@ nav .social i:hover{
     margin-top: 30px;
 }
 
-.classes .container .col3{
+.classes .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one two three"
+    "four five five";
     gap: 25px;
 }
 
-.classes .container .col2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin-top: 25px;
+.classes .container .one{
+    grid-area: one;
 }
 
-.classes .container .col3 .card{
+.classes .container .two{
+    grid-area: two;
+}
+
+.classes .container .three{
+    grid-area: three;
+}
+
+.classes .container .four{
+    grid-area: four;
+}
+
+.classes .container .five{
+    grid-area: five;
+}
+
+.classes .container .card{
     background-color: #0a0a0a;
     height: 300px;
 }
 
-.classes .container .col2 .card{
+.classes .container .four,
+.classes .container .five{
     background-color: #0a0a0a;
     height: 400px;
 }
 
-.classes .container .col3 .one .img-form{
+.classes .container .one .img-form{
     background: url('../images/class-1.jpg');
     width: auto;
-    height: 220px;
+    height: 210px;
     border-bottom: 4px solid #333333;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-.classes .container .col3 .two .img-form{
+.classes .container .two .img-form{
     background: url('../images/class-2.jpg');
     width: auto;
-    height: 220px;
+    height: 210px;
     border-bottom: 4px solid #333333;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.classes .container .col3 .three .img-form{
+.classes .container .three .img-form{
     background: url('../images/class-3.jpg');
     width: auto;
-    height: 220px;
+    height: 210px;
     border-bottom: 4px solid #333333;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.classes .container .col2 .one .img-form{
+.classes .container .four .img-form{
     background: url('../images/class-4.jpg');
     width: auto;
     height: 280px;
     border-bottom: 4px solid #333333;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.classes .container .col2 .two .img-form{
+.classes .container .five .img-form{
     background: url('../images/class-5.jpg');
     width: auto;
     height: 280px;
     border-bottom: 4px solid #333333;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.classes .container .card .text-card{
+    font-family: Oswald;
+    padding: 20px 20px;
+}
+
+.classes .container .card .title1{
+    color: #F36100;
+}
+
+.classes .container .card .title2{
+    color: white;
+    font-size: 20px;
 }
 
 /** responsive style **/
 
-@media(max-width:961px){
+@media(max-width:991px){
 
     nav{
         grid-template-columns: 1fr 1fr;
@@ -429,11 +475,26 @@ nav .social i:hover{
     .max-width{
         padding: 0px 50px;
     }
+
+    .classes .container{
+        grid-template-areas: 
+        "one two"
+        "three four"
+        "five five";
+    }
+
+    .classes .container .four{
+        height: 300px;
+    }
+
+    .classes .container .four .img-form{
+        height: 210px;
+    }
 }
 
 @media(max-width:600px){
     nav{
-        padding: 20px 10px;
+        padding: 30px 10px;
     }
 
     nav .logo img{
@@ -460,6 +521,27 @@ nav .social i:hover{
 
     .max-width{
         padding: 0px 10px;
+    }
+
+    .classes .container{
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+    }
+
+    .classes .container{
+        padding: 0px 20px;
+    }
+
+    .classes .container .five{
+        height: 300px;
+    }
+
+    .classes .container .five .img-form{
+        height: 210px;
     }
     
 }
