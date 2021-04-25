@@ -394,6 +394,60 @@ nav .social i:hover{
     font-size: 20px;
 }
 
+/** registration section style **/
+
+.registration{
+    width: 100%;
+    height: 70vh;
+    background: url("../images/banner-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registration .container{
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.registration .container .text1{
+    font-family: Oswald;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.registration .container .text2{
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+    color: #c4c4c4;
+    margin-top: 20px;
+}
+
+.registration .container .btn{
+    margin-top: 35px;
+}
+
+.registration .container button{
+    padding: 15px 20px;
+    background: transparent;
+    border: 2px solid #F36100;
+    color: white;
+    font-size: 16px;
+    font-family: Mulish;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.registration .container button:hover{
+    background: #F36100;
+}
+
 /** responsive style **/
 
 @media(max-width:991px){
